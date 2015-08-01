@@ -23,6 +23,12 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
+gem 'delayed_job_active_record'    # Akcje w tle https://github.com/collectiveidea/delayed_job
+								   # gmail trzeba znieść bariery - moje konto -> logowanie i bezpieczeństwo i na sam dół
+gem 'daemons'    # do akcji w backgroundzie z mailerem "bin/delayed_job start"
+
+
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

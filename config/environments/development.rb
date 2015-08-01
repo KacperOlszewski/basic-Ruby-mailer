@@ -23,8 +23,9 @@ Rails.application.configure do
   domain: "gmail.com",
   authentication: "plain",
   enable_starttls_auto: true,
-  user_name: ENV['RoREmail'],
-  password: ENV['RoRPass']
+  user_name: "myroremail@gmail.com", 
+  password: ENV['Ruby_email_pass'] # export ZMIENNA="hasło", i w railsach ENV['ZMIENNA']
+  
   }
   config.action_mailer.default_url_options = {host: "localhost:3000"}
 
